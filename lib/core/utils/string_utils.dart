@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 /// Utility class cho xử lý chuỗi
 class StringUtils {
   /// Kiểm tra chuỗi có rỗng hoặc null không
