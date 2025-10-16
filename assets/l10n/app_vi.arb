@@ -1,0 +1,23 @@
+{
+  "appTitle": "Flutter Base Small",
+  "login": "Đăng nhập",
+  "welcomeBack": "Chào mừng bạn quay trở lại!",
+  "email": "Email",
+  "emailHint": "Nhập email của bạn",
+  "password": "Mật khẩu",
+  "passwordHint": "Nhập mật khẩu của bạn",
+  "loginButton": "Đăng nhập",
+  "loginSuccess": "Đăng nhập thành công",
+  "loginFailed": "Đăng nhập thất bại",
+  "emailRequired": "Vui lòng nhập email",
+  "passwordRequired": "Vui lòng nhập mật khẩu",
+  "home": "Trang chủ",
+  "helloWorld": "Xin chào thế giới!",
+  "welcomeMessage": "Chào mừng đến với ứng dụng Flutter Base Small",
+  "logout": "Đăng xuất",
+  "loading": "Đang tải...",
+  "error": "Lỗi",
+  "retry": "Thử lại",
+  "pageNotFound": "Trang không tìm thấy",
+  "goHome": "Về trang chủ"
+}

@@ -1,0 +1,23 @@
+{
+  "appTitle": "Flutter Base Small",
+  "login": "Login",
+  "welcomeBack": "Welcome back!",
+  "email": "Email",
+  "emailHint": "Enter your email",
+  "password": "Password",
+  "passwordHint": "Enter your password",
+  "loginButton": "Login",
+  "loginSuccess": "Login successful",
+  "loginFailed": "Login failed",
+  "emailRequired": "Please enter email",
+  "passwordRequired": "Please enter password",
+  "home": "Home",
+  "helloWorld": "Hello World!",
+  "welcomeMessage": "Welcome to Flutter Base Small app",
+  "logout": "Logout",
+  "loading": "Loading...",
+  "error": "Error",
+  "retry": "Retry",
+  "pageNotFound": "Page not found",
+  "goHome": "Go Home"
+}
