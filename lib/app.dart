@@ -7,6 +7,7 @@ import 'core/config/app_config.dart';
 import 'core/config/app_theme.dart';
 import 'core/config/app_routes.dart';
 import 'core/services/locale_service.dart';
+import 'core/services/service_locator.dart';
 import 'core/bloc/locale/locale_bloc.dart';
 import 'features/auth/bloc/auth_bloc.dart';
 
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider(create: (context) => AuthBloc()),
         BlocProvider(
-          create: (context) => LocaleBloc()..add(LocaleLoadRequested()),
+          create: (context) => LocaleBloc(serviceLocator<LocaleService>())
+            ..add(LocaleLoadRequested()),
         ),
       ],
       child: BlocBuilder<LocaleBloc, LocaleState>(

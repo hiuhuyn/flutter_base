@@ -8,7 +8,9 @@ part 'locale_event.dart';
 part 'locale_state.dart';
 
 class LocaleBloc extends Bloc<LocaleEvent, LocaleState> {
-  LocaleBloc() : super(LocaleInitial()) {
+  final LocaleService _localeService;
+
+  LocaleBloc(this._localeService) : super(LocaleInitial()) {
     on<LocaleChanged>(_onLocaleChanged);
     on<LocaleLoadRequested>(_onLocaleLoadRequested);
   }
@@ -20,7 +22,7 @@ class LocaleBloc extends Bloc<LocaleEvent, LocaleState> {
     emit(LocaleLoading());
 
     try {
-      await LocaleService.saveLocale(event.locale);
+      await _localeService.saveLocale(event.locale);
       emit(LocaleSuccess(event.locale));
     } catch (e) {
       emit(LocaleFailure(e.toString()));
@@ -34,7 +36,7 @@ class LocaleBloc extends Bloc<LocaleEvent, LocaleState> {
     emit(LocaleLoading());
 
     try {
-      final locale = await LocaleService.getSavedLocale();
+      final locale = await _localeService.getSavedLocale();
       emit(LocaleSuccess(locale));
     } catch (e) {
       emit(LocaleFailure(e.toString()));
