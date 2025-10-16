@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import '../log.dart';
+import '../utils/log.dart';
 import '../exceptions/api_exception.dart';
 import '../exceptions/network_exception.dart';
 import '../exceptions/server_exception.dart';
