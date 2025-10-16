@@ -4,6 +4,7 @@ import '../services/user_service.dart';
 
 /// User repository for handling user-related data operations
 class UserRepository {
+  // ignore: unused_field
   final UserService _userService;
 
   UserRepository({UserService? userService})

@@ -24,7 +24,6 @@ bool debugLogEnabled = false;
 /// ```
 bool debugLog(String message) {
   assert(() {
-    // TODO(log): make it convenient to enable these logs in tests for debugging a failing test
     if (debugLogEnabled) {
       print(message); // ignore: avoid_print
     }

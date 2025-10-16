@@ -4,8 +4,6 @@ import 'socket_models.dart';
 /// Factory for creating and managing socket services
 class SocketServiceFactory {
   static SocketClient? _socketClient;
-  static String? _baseUrl;
-  static String? _authToken;
 
   /// Get socket client instance
   static SocketClient get socketClient {
@@ -15,8 +13,6 @@ class SocketServiceFactory {
 
   /// Connect to socket server
   static Future<void> connect(String url, {String? authToken}) async {
-    _baseUrl = url;
-    _authToken = authToken;
     await socketClient.connect(url, authToken: authToken);
   }
 
@@ -130,19 +126,16 @@ class SocketServiceFactory {
 
   /// Set authentication token
   static void setAuthToken(String token) {
-    _authToken = token;
     socketClient.setAuthToken(token);
   }
 
   /// Clear authentication token
   static void clearAuthToken() {
-    _authToken = null;
     socketClient.clearAuthToken();
   }
 
   /// Update socket URL
   static void updateUrl(String newUrl) {
-    _baseUrl = newUrl;
     socketClient.updateUrl(newUrl);
   }
 
@@ -165,8 +158,6 @@ class SocketServiceFactory {
   static void reset() {
     _socketClient?.dispose();
     _socketClient = null;
-    _baseUrl = null;
-    _authToken = null;
   }
 
   /// Dispose resources

@@ -60,12 +60,12 @@ class ApiClient {
       case DioExceptionType.connectionTimeout:
       case DioExceptionType.sendTimeout:
       case DioExceptionType.receiveTimeout:
-        return NetworkException(
+        return const NetworkException(
           'Connection timeout. Please check your internet connection.',
         );
 
       case DioExceptionType.connectionError:
-        return NetworkException(
+        return const NetworkException(
           'No internet connection. Please check your network.',
         );
 
@@ -92,11 +92,11 @@ class ApiClient {
         }
 
       case DioExceptionType.cancel:
-        return ApiException('Request cancelled');
+        return const ApiException('Request cancelled');
 
       case DioExceptionType.unknown:
       default:
-        return ApiException('Unknown error occurred');
+        return const ApiException('Unknown error occurred');
     }
   }
 

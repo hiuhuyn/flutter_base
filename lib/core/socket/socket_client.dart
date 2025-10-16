@@ -138,7 +138,7 @@ class SocketClient {
   /// Send message to server
   Future<void> sendMessage(Map<String, dynamic> message) async {
     if (!_isConnected || _channel == null) {
-      throw SocketNotConnectedException('Socket is not connected');
+      throw const SocketNotConnectedException('Socket is not connected');
     }
 
     try {
