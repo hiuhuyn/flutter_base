@@ -1,0 +1,8 @@
+{
+    "name": "flutter_base",
+    "title": "Test Title",
+    "appPath": "../../build/macos/Build/Products/Release/flutter_base.app",
+    "dmgName": "flutter_base.dmg",
+    "iconSvg": "logo.svg",
+    "iconIcns": "logo.icns"
+  }

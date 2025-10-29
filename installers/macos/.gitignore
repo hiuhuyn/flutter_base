@@ -1,0 +1,21 @@
+# Ignore tất cả mặc định
+*
+
+# Nhưng giữ lại các file cấu hình và script cần thiết
+!/.gitignore
+!/build.sh
+!/package.json
+!/README.md
+!/config.json
+!/build_setting.json
+!/logo.svg
+
+# Bỏ qua các file/thư mục sinh ra trong quá trình build
+/.generated.appdmg.json
+/logo.icns
+/logo.iconset/
+/*.dmg
+/node_modules/
+/package-lock.json
+/.DS_Store
+

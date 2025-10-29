@@ -1,0 +1,27 @@
+{
+  "name": "flutter-base-dmg-builder",
+  "version": "1.0.0",
+  "description": "Tool để build DMG cho Flutter app trên macOS",
+  "main": "build.sh",
+  "scripts": {
+    "build": "./build.sh",
+    "build-dmg": "npx appdmg config.json flutter_base.dmg",
+    "create-icns": "echo 'Sử dụng build.sh để tạo ICNS từ SVG'"
+  },
+  "dependencies": {
+    "appdmg": "^0.6.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "flutter",
+    "dmg",
+    "macos",
+    "appdmg",
+    "icns"
+  ],
+  "author": "Flutter Base Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
